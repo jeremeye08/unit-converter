@@ -38,7 +38,7 @@ function validateInput(event) {
 
 function toFeet() {
     let feet
-    feet = (3.281 * Number(inputEl.value)).toFixed(3)
+    feet = (Number(inputEl.value) * 3.281).toFixed(3)
     feetEl.textContent = feet
 }
 
