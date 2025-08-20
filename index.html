@@ -1,0 +1,84 @@
+<!-- Unit Converter -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Meta Syntax -->
+        <meta lang="en" charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE edge" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <title>Unit Converter</title>
+
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+        <div id="container">
+            
+            <!-- First Section -->
+            <div id="first-section">
+                <h2 id="main-heading">Metric/Imperial Unit Conversion</h2>
+                <input id="user-input" type="text" autocomplete="off" oninput="validateInput(event)">
+                <button id="convert-btn">Convert</button>
+            </div>
+
+            <!-- Second Section -->
+            <div id="second-section">
+
+                <div class="box">
+                    <h3 class="sub-headings">Length (Metres/Feet)</h3>
+                    <div class="conversion">
+                        <p class="conversions">
+                            <span class="user-value">1</span> metres = <span class="highlight" id="feet">3.281</span> feet
+                        </p>
+                        <p class="conversions" id="separator">|</p>
+                        <p class="conversions">
+                            <span class="user-value">1</span> feet = <span class="highlight" id="metres">0.305</span> metre
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3 class="sub-headings">Volume (Litres/Gallons)</h3>
+                    <div class="conversion">
+                        <p class="conversions">
+                            <span class="user-value">1</span> litres = <span class="highlight" id="gallons">0.264</span> gallons
+                        </p>
+                        <p class="conversions" id="separator">|</p>
+                        <p class="conversions">
+                            <span class="user-value">1</span> gallons = <span class="highlight" id="litres">3.785</span> litres
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3 class="sub-headings">Mass (Kilograms/Pounds)</h3>
+                    <div class="conversion">
+                        <p class="conversions">
+                            <span class="user-value">1</span> kilograms = <span class="highlight" id="pounds">2.204</span> pounds
+                        </p>
+                        <p class="conversions" id="separator">|</p>
+                        <p class="conversions">
+                            <span class="user-value">1</span> pounds = <span class="highlight" id="kilos">0.453</span> kilograms
+                    </div>
+                </div>
+            
+            </div>
+            
+
+        </div>
+
+        <script src="index.js"></script>
+        <div id="toast"></div>
+    </body>
+</html>

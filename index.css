@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+#main-heading {
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.sub-headings {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-wrap: nowrap;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+}
+
+#container {
+    width: 38vw;
+    height: 80vh;
+    border-radius: 30px;
+}
+
+#first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+    background-color: #6943FF;
+    border-radius: 10px 10px 0 0;
+}
+
+#user-input {
+    font-size: 4em;
+    font-weight: 700;
+    max-width: 22vw;
+    border-radius: 8px;
+    border: 1px solid #B295FF;
+    padding: 0.5rem;
+    background: #273549;
+    color: white;
+    text-align: center;
+    caret-color: #B295FF;
+}
+
+#user-input:focus {
+    outline: none;
+}
+
+#user-input::-webkit-outer-spin-button, 
+#user-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#convert-btn {
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-align: center;
+    color: #3D3D3D;
+}
+
+#convert-btn:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+#convert-btn:active {
+    background-color: rgb(197, 197, 197);
+    transform: scale(0.95);
+}
+
+#second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    border-radius: 0 0 10px 10px;
+    background-color: #1F2937;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    width: 34vw;
+    height: 12vh;
+    border-radius: 8px;
+    color: #CCC1FF;
+    background-color: #273549;
+}
+
+.conversion {
+    display: flex;
+    width: 32vw;
+    justify-content: space-around;
+}
+
+.conversions {
+    color: white;
+}
+
+#separator {
+    color: #B295FF;
+}
+
+.highlight {
+    background-color: transparent;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.highlight:hover {
+    background-color: #6943FF;
+}
+
+#toast {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.7vw;
+
+    background: #1F2937;
+    color: #B295FF;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+#toast.show {
+    opacity: 0.9;
+}
